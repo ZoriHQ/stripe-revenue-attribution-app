@@ -1,0 +1,60 @@
+{
+  "allowed_redirect_uris": [
+    "https://api.zorihq.com/api/v1/payment-providers/stripe/app/callback"
+  ],
+  "connect_permissions": null,
+  "distribution_type": "public",
+  "icon": "",
+  "id": "com.zorihq.platform",
+  "name": "ZoriHQ - Revenue Attribution",
+  "permissions": [
+    {
+      "permission": "customer_read",
+      "purpose": "Read customer data for revenue attribution tracking"
+    },
+    {
+      "permission": "subscription_read",
+      "purpose": "Read subscription data for revenue attribution tracking"
+    },
+    {
+      "permission": "invoice_read",
+      "purpose": "Read invoice data for revenue attribution tracking"
+    },
+    {
+      "permission": "charge_read",
+      "purpose": "Read charge data for revenue attribution tracking"
+    },
+    {
+      "permission": "payment_intent_read",
+      "purpose": "Read payment intent data for revenue attribution tracking"
+    },
+    {
+      "permission": "event_read",
+      "purpose": "Read event data in webhook events for revenue attribution tracking"
+    },
+    {
+      "permission": "checkout_session_read",
+      "purpose": "Read Checkout Session data in webhook events"
+    }
+  ],
+  "sandbox_install_compatible": true,
+  "stripe_api_access_type": "oauth",
+  "ui_extension": {
+    "content_security_policy": {
+      "connect-src": null,
+      "image-src": null,
+      "purpose": ""
+    },
+    "views": [
+      {
+        "component": "Home",
+        "viewport": "stripe.dashboard.home.overview"
+      },
+      {
+        "component": "AppSettings",
+        "viewport": "settings"
+      }
+    ]
+  },
+  "version": "0.0.3"
+}

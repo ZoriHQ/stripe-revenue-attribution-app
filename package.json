@@ -1,0 +1,30 @@
+{
+  "name": "com.zorihq.platform",
+  "version": "0.0.2",
+  "description": "ZoriHQ Revenue Attribution - Connect your Stripe account to track and analyze revenue attribution across your customer lifecycle",
+  "private": true,
+  "license": "~~proprietary~~",
+  "dependencies": {
+    "@stripe/ui-extension-sdk": "^9.1.0",
+    "stripe": "^19.2.0"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/@stripe/ui-extension-tools/eslintrc.ui-extension.js"
+    ]
+  },
+  "scripts": {
+    "lint": "eslint --ext ts,tsx src",
+    "test": "jest"
+  },
+  "resolutions": {
+    "@types/react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@stripe/ui-extension-tools": "^0.0.1"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
