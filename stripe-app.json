@@ -1,6 +1,7 @@
 {
   "allowed_redirect_uris": [
-    "https://api.zorihq.com/api/v1/payment-providers/stripe/app/callback"
+    "https://api.zorihq.com/api/v1/payment-providers/stripe/app/callback",
+    "https://devproxy.zorihq.com/api/v1/payment-providers/stripe/app/callback"
   ],
   "connect_permissions": null,
   "distribution_type": "public",
@@ -56,5 +57,5 @@
       }
     ]
   },
-  "version": "0.0.3"
+  "version": "0.0.4"
 }
